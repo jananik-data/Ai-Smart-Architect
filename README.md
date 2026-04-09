@@ -2,134 +2,186 @@
 
 > **Transform Your Ideas Into Smart Home Designs**
 
-A full-stack web application that generates floor plans and estimates construction costs using AI. Perfect for architects, builders, and home design enthusiasts.
+A full-stack web application that generates floor plans and estimates construction costs using AI.  
+Perfect for architects, builders, and home design enthusiasts.
+
+<br />
 
 ---
 
-## 📑 Table of Contents
+<br />
 
-- [✨ Features](#features)
-- [📁 Project Structure](#project-structure)
-- [🚀 Quick Start](#quick-start)
-- [📦 Installation](#installation--setup)
-- [💻 Usage](#how-to-use)
-- [🔌 API Endpoints](#api-endpoints)
-- [🏗️ Components](#components)
-- [⚙️ Customization](#customization-tips)
-- [🐛 Troubleshooting](#troubleshooting)
-- [🔮 Future Features](#future-enhancements)
-- [📄 License](#license)
+## 📑 Quick Navigation
+
+| 🚀 | 📚 | 🔌 | ⚙️ | 🐛 |
+|-------|-------|-------|-------|-------|
+| [Quick Start](#-quick-start) | [Installation](#-installation--setup) | [API Docs](#-api-endpoints) | [Customize](#-customization) | [Help](#-troubleshooting) |
+
+<br />
 
 ---
 
-## ✨ Features
+<br />
 
-| Feature | Description |
-|---------|-------------|
-| 📐 **Smart Floor Plans** | AI-generated floor layouts based on plot size and room count |
-| 💰 **Cost Estimation** | Detailed breakdown including materials, labor, and timeline |
-| 🎨 **Modern UI** | Responsive, gradient-based interface with smooth animations |
-| 🔐 **User Authentication** | Gmail-style login/signup with secure session management |
-| 📱 **Responsive Design** | Works seamlessly on desktop, tablet, and mobile devices |
-| 📥 **PDF Export** | Download designs and cost estimates as PDF files |
-| ⚡ **Real-time Validation** | Instant feedback on form inputs |
+## ✨ Features at a Glance
+
+<table>
+<tr>
+<td>
+  
+### 📐 Smart Floor Plans
+► AI-generated layouts  
+► Room by room breakdown  
+► Dimension calculations  
+
+</td>
+<td>
+  
+### 💰 Cost Estimation  
+► Total cost breakdown  
+► Per sq ft pricing  
+► Material details  
+
+</td>
+</tr>
+<tr>
+<td>
+  
+### 🔐 Authentication
+► Gmail-style login  
+► Secure signup  
+► Session management  
+
+</td>
+<td>
+  
+### 📥 PDF Export
+► Download designs  
+► Print-ready format  
+► High quality output  
+
+</td>
+</tr>
+<tr>
+<td>
+  
+### 🎨 Modern UI
+► Responsive design  
+► Smooth animations  
+► Beautiful gradients  
+
+</td>
+<td>
+  
+### ⚡ Real-time Validation
+► Instant feedback  
+► Error handling  
+► User guidance  
+
+</td>
+</tr>
+</table>
+
+<br />
 
 ---
+
+<br />
+
+## 📁 Project Structure
 
 ## 📁 Project Structure
 
 ```
 AI-Smart-Architect/
-│
 ├── 📂 backend/
-│   ├── app.py                           # Flask API server (port 5000)
-│   ├── requirements.txt                 # Python dependencies
-│   ├── package.json                     # Project metadata
+│   ├── app.py ........................... Flask API Server
+│   ├── requirements.txt ................. Python Dependencies
 │   └── 📂 services/
-│       ├── design_generator.py          # Floor plan generation logic
-│       └── cost_estimator.py            # Cost calculation engine
+│       ├── design_generator.py ......... Floor Plan Logic
+│       └── cost_estimator.py ........... Cost Calculation
 │
 ├── 📂 frontend/
-│   ├── package.json                     # Node dependencies
-│   ├── package-lock.json
+│   ├── package.json ..................... Node Dependencies
 │   ├── 📂 public/
-│   │   ├── index.html                   # HTML entry point
 │   │   └── 📂 assets/images/
-│   │       └── house.svg                # Logo/branding image
+│   │       └── house.svg ............... Logo Image
 │   │
 │   └── 📂 src/
-│       ├── App.jsx                      # Main app component with routing
-│       ├── App.css
-│       ├── index.js                     # React entry point
-│       ├── index.css
-│       │
 │       ├── 📂 pages/
-│       │   ├── Home.jsx                 # Dashboard & design page
+│       │   ├── Home.jsx ................ Dashboard Page
 │       │   └── Home.css
 │       │
 │       ├── 📂 components/
-│       │   ├── Welcome.jsx              # Landing page with tagline
-│       │   ├── Welcome.css
-│       │   ├── Login.jsx                # Gmail-style auth form
-│       │   ├── Login.css
-│       │   ├── Form.jsx                 # Design input form
-│       │   ├── Form.css
-│       │   ├── ResultCard.jsx           # Results display
-│       │   ├── ResultCard.css
-│       │   ├── Navbar.jsx               # Navigation with user info
-│       │   └── Navbar.css
+│       │   ├── Welcome.jsx ............ Landing Page
+│       │   ├── Login.jsx .............. Auth Form
+│       │   ├── Form.jsx ............... Design Form
+│       │   ├── ResultCard.jsx ......... Results Display
+│       │   └── Navbar.jsx ............ Navigation
 │       │
 │       ├── 📂 services/
-│       │   ├── api.js                   # Backend API communication
-│       │   ├── auth.js                  # Authentication API calls
-│       │   └── pdf.js                   # PDF generation utility
+│       │   ├── api.js ................. Backend API
+│       │   ├── auth.js ................ Auth API
+│       │   └── pdf.js ................. PDF Export
 │       │
 │       └── 📂 context/
-│           └── AuthContext.jsx          # Global auth state management
+│           └── AuthContext.jsx ........ Auth State
 │
-├── .gitignore
-├── README.md
-└── QUICK_START.md
+├── README.md ............................ This File
+└── QUICK_START.md ...................... Quick Guide
 ```
 
+<br />
+
 ---
+
+<br />
 
 ## 🚀 Quick Start
 
 ### Prerequisites
-- **Node.js** v14+ and npm
-- **Python** 3.8+ and pip
-- **Git** (for version control)
 
-### One-Command Setup (Recommended)
+```
+✓ Node.js v14+
+✓ Python 3.8+
+✓ Git
+```
+
+### 30-Second Setup
 
 ```bash
-# Backend setup & run
+# Terminal 1: Backend
 cd backend
 pip install -r requirements.txt
 python app.py
 
-# In a new terminal, Frontend setup & run
+# Terminal 2: Frontend (New Terminal)
 cd frontend
 npm install
 npm start
 ```
 
-✅ Backend: http://localhost:5000  
-✅ Frontend: http://localhost:3000
+**That's it!** 🎉
+
+✅ **Backend:** http://localhost:5000  
+✅ **Frontend:** http://localhost:3000
+
+<br />
 
 ---
 
+<br />
+
 ## 📦 Installation & Setup
 
-### Backend Installation
+### Backend Installation (Python/Flask)
 
-**Step 1: Navigate to backend directory**
+**Step 1️⃣** → Navigate to backend folder
 ```bash
 cd backend
 ```
 
-**Step 2: Create virtual environment (optional but recommended)**
+**Step 2️⃣** → Create virtual environment *(Optional)*
 ```bash
 # Windows
 python -m venv venv
@@ -140,77 +192,102 @@ python -m venv venv
 source venv/bin/activate
 ```
 
-**Step 3: Install Python dependencies**
+**Step 3️⃣** → Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-**Step 4: Run Flask server**
+**Step 4️⃣** → Run server
 ```bash
 python app.py
 ```
 
-✅ Backend ready at: `http://localhost:5000`
+✅ Server at: `http://localhost:5000`
 
----
+<br />
 
-### Frontend Installation
+### Frontend Installation (React)
 
-**Step 1: Open new terminal and navigate to frontend**
+**Step 1️⃣** → Open new terminal and navigate
 ```bash
 cd frontend
 ```
 
-**Step 2: Install npm dependencies**
+**Step 2️⃣** → Install packages
 ```bash
 npm install
 ```
 
-**Step 3: Start development server**
+**Step 3️⃣** → Start development server
 ```bash
 npm start
 ```
 
-✅ Frontend ready at: `http://localhost:3000`
+✅ App at: `http://localhost:3000`
+
+<br />
 
 ---
+
+<br />
 
 ## 💻 How to Use
 
-### 1️⃣ Welcome Page
-- View inspiring welcome message: *"Every great home starts with a small idea"*
+```
+STEP 1️⃣  Welcome Page
+   ↓
+STEP 2️⃣  Signup / Login
+   ↓
+STEP 3️⃣  Fill Design Form
+   ↓
+STEP 4️⃣  View Results
+   ↓
+STEP 5️⃣  Download PDF
+```
+
+<br />
+
+### Detailed Steps
+
+**1️⃣ Welcome Page**
+- See inspiring message: *"Every great home starts with a small idea"*
 - Click **"Start Designing Your Home"** button
 
-### 2️⃣ Authentication
-- **New users**: Click "Sign Up" and create account
-- **Existing users**: Click "Sign In" to log in
-- Email and password validation required
+**2️⃣ Authentication**
+- **New User?** → Click "Sign Up"
+- **Existing User?** → Click "Sign In"
+- Enter valid email & password (min 6 chars)
 
-### 3️⃣ Design Form
-- Enter **Plot Size** (100 - 100,000 sq ft)
-- Enter **Number of Rooms** (1 - 20)
-- Select **Budget Level**: Budget-Friendly, Standard, or Premium
+**3️⃣ Design Form**
+- **Plot Size:** 100 - 100,000 sq ft
+- **Number of Rooms:** 1 - 20
+- **Budget Level:** Budget-Friendly / Standard / Premium
 - Click **"Generate Design"**
 
-### 4️⃣ View Results
-- **Floor Plan**: ASCII visualization of layout
-- **Room Details**: Individual room dimensions and areas
-- **Cost Estimate**: Total cost, per sq ft, per room
-- **Detailed Breakdown**: Foundation, electrical, plumbing, etc.
-- **Timeline**: Estimated project duration
+**4️⃣ View Results**
+- 📐 Floor plan layout
+- 🏠 Room details & dimensions
+- 💰 Total & per-sqft costs
+- 📊 Cost breakdown chart
 
-### 5️⃣ Download & Share
-- Click **"Download as PDF"** to save your design
-- Reset form and try another design with "Start Over"
+**5️⃣ Download & Share**
+- Click **"Download as PDF"**
+- Share your design
+- Start over anytime
+
+<br />
 
 ---
 
+<br />
+
 ## 🔌 API Endpoints
 
-### 🔐 Authentication Endpoints
+### 🔐 Authentication
 
-#### POST `/api/login`
-Login with existing account
+#### **POST** `/api/login`
+
+Login to existing account
 
 **Request:**
 ```json
@@ -220,7 +297,7 @@ Login with existing account
 }
 ```
 
-**Response (Success):**
+**Response:**
 ```json
 {
   "success": true,
@@ -229,14 +306,15 @@ Login with existing account
       "email": "user@example.com",
       "fullName": "John Doe"
     },
-    "token": "token_user@example.com_123456789"
+    "token": "token_xxx_123456"
   }
 }
 ```
 
----
+<br />
 
-#### POST `/api/register`
+#### **POST** `/api/register`
+
 Create new account
 
 **Request:**
@@ -248,7 +326,7 @@ Create new account
 }
 ```
 
-**Response (Success):**
+**Response:**
 ```json
 {
   "success": true,
@@ -257,17 +335,22 @@ Create new account
       "email": "newuser@example.com",
       "fullName": "Jane Smith"
     },
-    "token": "token_newuser@example.com_123456789"
+    "token": "token_xxx_789012"
   }
 }
 ```
 
+<br />
+
 ---
 
-### 🏗️ Design Generation Endpoint
+<br />
 
-#### POST `/api/generate`
-Generate floor plan and cost estimate
+### 🏗️ Design Generation
+
+#### **POST** `/api/generate`
+
+Generate floor plan & cost estimate
 
 **Request:**
 ```json
@@ -278,13 +361,13 @@ Generate floor plan and cost estimate
 }
 ```
 
-**Response (Success):**
+**Response:**
 ```json
 {
   "success": true,
   "data": {
     "floorPlan": {
-      "floor_plan": "ASCII floor plan visualization",
+      "floor_plan": "ASCII visualization",
       "room_details": [
         {
           "room_number": 1,
@@ -315,11 +398,16 @@ Generate floor plan and cost estimate
 }
 ```
 
+<br />
+
 ---
 
-### 🏥 Health Check Endpoint
+<br />
 
-#### GET `/api/health`
+### 🏥 Health Check
+
+#### **GET** `/api/health`
+
 Check if backend is running
 
 **Response:**
@@ -330,54 +418,68 @@ Check if backend is running
 }
 ```
 
+<br />
+
 ---
+
+<br />
 
 ## 🏗️ Components
 
-### Backend Components
+### Backend (Python)
 
-#### `design_generator.py`
-| Function | Description |
-|----------|-------------|
-| `generate_floor_plan()` | Creates floor plan layout and room details |
-| `generate_ascii_plan()` | Generates ASCII visualization |
-| `calculate_room_sizes()` | Computes individual room dimensions |
+**`design_generator.py`**
+```
+► generate_floor_plan() .... Creates layout
+► generate_ascii_plan() .... Visualization
+► calculate_room_sizes() ... Room dimensions
+```
 
-#### `cost_estimator.py`
-| Function | Description |
-|----------|-------------|
-| `estimate_cost()` | Calculates total and itemized costs |
-| `estimate_timeline()` | Estimates project duration |
-| `calculate_breakdown_percentage()` | Cost distribution analysis |
+**`cost_estimator.py`**
+```
+► estimate_cost() ............. Total costs
+► estimate_timeline() ......... Duration
+► calculate_breakdown_percentage() .. Distribution
+```
+
+<br />
+
+### Frontend (React)
+
+**Pages**
+```
+► Home.jsx .......... Main dashboard
+► Welcome.jsx ....... Landing page
+```
+
+**Components**
+```
+► Login.jsx ......... Auth form
+► Form.jsx .......... Design form
+► ResultCard.jsx .... Results display
+► Navbar.jsx ........ Navigation bar
+► Welcome.jsx ....... Welcome screen
+```
+
+**Services**
+```
+► auth.js ........... Authentication API
+► api.js ............ Design API
+► pdf.js ............ PDF generation
+```
+
+**State Management**
+```
+► AuthContext.jsx ... Global auth state
+```
+
+<br />
 
 ---
 
-### Frontend Components
+<br />
 
-#### Pages
-- **Home.jsx** - Main dashboard with form and results display
-- **Welcome.jsx** - Landing page with tagline and welcome message
-
-#### Components
-| Component | Purpose |
-|-----------|---------|
-| **Login.jsx** | Gmail-style authentication form (sign in/sign up) |
-| **Navbar.jsx** | Top navigation with user info and logout button |
-| **Form.jsx** | Design input form with validation |
-| **ResultCard.jsx** | Floor plan and cost estimate display |
-| **Welcome.jsx** | Landing page with inspiring message |
-
-#### Services
-- **auth.js** - Authentication API calls (login, register)
-- **api.js** - Backend communication for design generation
-- **pdf.js** - PDF generation and download utility
-
-#### State Management
-- **AuthContext.jsx** - Global authentication state with localStorage persistence
-
----
-
-## ⚙️ Customization Tips
+## ⚙️ Customization
 
 ### 1. Adjust Cost Rates
 
@@ -385,143 +487,180 @@ Edit `backend/services/cost_estimator.py`:
 
 ```python
 cost_per_sqft = {
-    "low": 50,      # Budget-Friendly
+    "low": 50,      # Budget-Friendly ↓
     "medium": 100,  # Standard
-    "high": 150     # Premium
+    "high": 150     # Premium ↑
 }
 ```
 
-### 2. Change Color Scheme
+<br />
 
-Update CSS files:
-- `frontend/src/pages/Home.css` - Main page colors
-- `frontend/src/components/Login.css` - Login page theme
-- `frontend/src/components/Welcome.css` - Welcome page styling
+### 2. Change Colors
 
-### 3. Modify Room Layout Logic
+Update CSS in `frontend/src/components/`:
+- `Login.css` ................. Auth page theme
+- `Welcome.css` ............... Welcome page style
+- `Home.css` .................. Dashboard colors
+
+<br />
+
+### 3. Modify Room Logic
 
 Edit `backend/services/design_generator.py`:
-- Adjust room sizing algorithm
-- Customize floor plan layout
-- Modify room calculation logic
+- Room sizing algorithm
+- Layout calculations
+- Visualization logic
+
+<br />
 
 ### 4. Update Port Numbers
 
 **Backend (Flask):**
 ```python
-# In app.py line 248:
-app.run(debug=True, host='0.0.0.0', port=5000)  # Change port here
+# app.py line 248
+app.run(debug=True, host='0.0.0.0', port=5000)
 ```
 
 **Frontend (React):**
 ```javascript
-// In frontend/src/services/api.js:
-const API_BASE_URL = 'http://localhost:5000';  // Update port here
+// src/services/api.js
+const API_BASE_URL = 'http://localhost:5000';
 ```
 
+<br />
+
 ---
+
+<br />
 
 ## 🐛 Troubleshooting
 
-### Common Issues & Solutions
-
 | Problem | Cause | Solution |
 |---------|-------|----------|
-| **Backend won't start** | Python version/missing dependencies | Run `pip install -r requirements.txt` and ensure Python 3.8+ |
-| **Frontend won't load** | Missing node_modules or npm issues | Run `npm install` and `npm start` again |
-| **Can't connect to backend** | Backend not running or port conflict | Ensure backend runs on port 5000: `python app.py` |
-| **Port 3000 already in use** | Another process using port | Kill process: `taskkill /PID <pid> /F` or change port |
-| **Port 5000 already in use** | Another Flask instance running | Kill process or change port in `app.py` |
-| **CORS errors** | Backend CORS not configured | CORS is enabled in `app.py` - check backend logs |
-| **PDF download fails** | Missing PDF libraries | Run `npm install html2canvas jspdf` |
-| **Login doesn't work** | Email validation issue | Ensure email format is correct (user@domain.com) |
-| **`git` command not found** | Git not installed | Install Git from https://git-scm.com |
-| **`npm` command not found** | Node.js not in PATH | Reinstall Node.js or update system PATH |
+| **Backend won't start** | Missing deps / Python version | `pip install -r requirements.txt` + Python 3.8+ |
+| **Frontend won't load** | Missing node_modules | `npm install` then `npm start` |
+| **Can't connect** | Backend offline / Port clash | Ensure backend on 5000 |
+| **Port 3000 in use** | Another process running | Kill process or change port |
+| **Port 5000 in use** | Flask already running | Kill process or change port |
+| **CORS errors** | Backend not configured | Enabled in `app.py` |
+| **PDF fails** | Missing libraries | `npm install html2canvas jspdf` |
+| **Login fails** | Invalid email format | Use correct format: user@domain.com |
+| **Git not found** | Not installed | Install from https://git-scm.com |
+| **npm not found** | Node.js path issue | Reinstall Node.js or update PATH |
 
-### Debug Mode
-
-**Enable backend debugging:**
-```python
-# app.py already has debug=True
-app.run(debug=True, ...)  # See detailed error traces
-```
-
-**Check frontend errors:**
-```bash
-# Open browser console: F12 or Right-click → Inspect → Console
-# Check Network tab for API calls
-```
+<br />
 
 ---
+
+<br />
 
 ## 🔮 Future Enhancements
 
-### Planned Features
-- 🎨 **3D Floor Plan Visualization** - Interactive 3D model viewer
-- 🗄️ **Database Integration** - Persistent user data and saved designs
-- 📊 **Analytics Dashboard** - Design history and statistics
-- 🏠 **Design Variations** - Multiple layout options from AI
-- 📱 **Mobile App** - Native iOS/Android applications
-- 🤖 **AI Suggestions** - Smart recommendations based on preferences
-- 💬 **Chat Support** - Live assistant for design questions
-- 🎯 **Advanced Filters** - Filter by style, budget, features
-- 🌍 **Multi-language** - Support for multiple languages
-- ☁️ **Cloud Storage** - Save designs to cloud
+```
+🎨 3D Visualization ........... Interactive 3D viewer
+🗄️  Database Backend .......... User data storage
+📊 Analytics Dashboard ....... Statistics & history
+🏠 Design Variations ......... Multiple layouts
+📱 Mobile App ............... iOS/Android native
+🤖 AI Suggestions ........... Smart recommendations
+💬 Chat Support ............. Live assistant
+🎯 Advanced Filters ......... Style & feature search
+🌍 Multi-language ........... Global support
+☁️  Cloud Storage ............ Online backup
+```
 
-### Roadmap
-- **Q2 2026**: 3D visualization
-- **Q3 2026**: Database backend
-- **Q4 2026**: Mobile app beta
-- **2027**: AI-powered features
+**Development Timeline:**
+- Q2 2026: 3D visualization
+- Q3 2026: Database backend
+- Q4 2026: Mobile beta
+- 2027: AI features
+
+<br />
 
 ---
 
-## 📄 License
+<br />
+
+## 📄 License & Contributing
+
+### 📜 License
 
 **MIT License** © 2026 AI Smart Architect
 
-This project is open source and available under the MIT License.  
-Feel free to use, modify, and distribute for personal and commercial projects.
+Open source • Free to use • Modify & distribute
 
----
+<br />
 
-## 🤝 Contributing
+### 🤝 Contributing
 
-We welcome contributions! Here's how:
+Want to help? Here's how:
 
-1. Fork the repository
-2. Create feature branch: `git checkout -b feature/amazing-feature`
-3. Commit changes: `git commit -m 'Add amazing feature'`
-4. Push to branch: `git push origin feature/amazing-feature`
+```
+1. Fork repository
+2. Create feature branch
+   git checkout -b feature/awesome-feature
+3. Commit changes
+   git commit -m 'Add awesome feature'
+4. Push branch
+   git push origin feature/awesome-feature
 5. Open Pull Request
+```
+
+<br />
 
 ---
+
+<br />
 
 ## 📞 Support & Contact
 
-**Have questions or issues?**
+**Need help?**
 
 - 📧 Email: support@ai-smart-architect.com
-- 🐛 Report bugs on [GitHub Issues](https://github.com/jananik-data/Ai-Smart-Architect/issues)
+- 🐛 Issues: [GitHub Issues](https://github.com/jananik-data/Ai-Smart-Architect/issues)
 - 💬 Discussions: [GitHub Discussions](https://github.com/jananik-data/Ai-Smart-Architect/discussions)
-- 📖 Documentation: Check QUICK_START.md for quick setup guide
+- 📖 Docs: See [QUICK_START.md](QUICK_START.md)
+
+<br />
 
 ---
+
+<br />
 
 ## 🎉 Acknowledgments
 
-- **Flask** - Python web framework
-- **React** - UI library
-- **CORS** - Cross-origin resource sharing
-- **html2canvas & jsPDF** - PDF generation
-- **Visual Studio Git** - Version control
+```
+Flask ..................... Web Framework
+React ..................... UI Library
+CORS ...................... Cross-origin Support
+html2canvas & jsPDF ....... PDF Generation
+GitHub .................... Version Control
+```
+
+<br />
 
 ---
 
-**Happy Designing! 🎨🏗️✨**
+<br />
+
+<div align="center">
+
+### ✨ Happy Designing! ✨
+
+**🎨 🏗️ 💡**
+
+<br >
+
+**[⬆ Back to Top](#-ai-smart-architect)**
+
+<br >
 
 Last Updated: April 9, 2026  
 Version: 1.0.0
+
+Made with ❤️ for architects, builders & designers
+
+</div>
 
 ## License
 
