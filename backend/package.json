@@ -1,0 +1,9 @@
+{
+  "name": "ai-smart-architect-backend",
+  "version": "1.0.0",
+  "description": "AI Smart Architect - Backend Flask Application",
+  "type": "module",
+  "scripts": {
+    "start": "python app.py"
+  }
+}

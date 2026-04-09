@@ -1,0 +1,226 @@
+.welcome-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated background elements */
+.welcome-container::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: float 20s infinite linear;
+  pointer-events: none;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(30px, 30px);
+  }
+}
+
+.welcome-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 2;
+}
+
+.welcome-text-section {
+  flex: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.welcome-tagline {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: slideInLeft 0.8s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.welcome-subtitle {
+  font-size: 1.3rem;
+  opacity: 0.95;
+  margin: 0;
+  font-weight: 300;
+  animation: slideInLeft 0.8s ease-out 0.2s both;
+}
+
+.welcome-image-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: slideInRight 0.8s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.house-img {
+  width: 100%;
+  max-width: 80%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.2));
+  animation: houseFloat 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+@keyframes houseFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.house-img:hover {
+  transform: scale(1.02);
+}
+
+.get-started-btn {
+  align-self: center;
+  margin-top: 2rem;
+  padding: 1.2rem 3rem;
+  background: linear-gradient(135deg, #FFD700 0%, #FFC700 100%);
+  color: #333;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
+  letter-spacing: 0.5px;
+}
+
+.get-started-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.get-started-btn:active {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .welcome-content {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .welcome-tagline {
+    font-size: 2.5rem;
+  }
+
+  .welcome-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .welcome-image-section {
+    width: 100%;
+  }
+
+  .house-illustration {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-container {
+    padding: 1rem;
+  }
+
+  .welcome-content {
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .welcome-tagline {
+    font-size: 1.8rem;
+  }
+
+  .welcome-subtitle {
+    font-size: 1rem;
+  }
+
+  .get-started-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .house-illustration {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-container {
+    padding: 0.5rem;
+  }
+
+  .welcome-tagline {
+    font-size: 1.5rem;
+  }
+
+  .welcome-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .get-started-btn {
+    padding: 0.9rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .house-illustration {
+    max-width: 200px;
+  }
+}
